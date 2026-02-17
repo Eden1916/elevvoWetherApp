@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Dashboard</h1>
+
+    <div class="search-container">
+      <input type="text" id="city-input" placeholder="Enter city name">
+      <button id="search-btn">Search</button>
+    </div>
+
+    <div id="loading" class="hidden">Loading...</div>
+
+    <div id="current-weather" class="weather-card hidden">
+      <h2 id="city-name"></h2>
+      <div class="temp" id="temperature"></div>
+      <img id="weather-icon" src="" alt="Weather Icon">
+      <div id="description"></div>
+    </div>
+
+    <div id="forecast" class="forecast-container hidden">
+      <h3>3-Day Forecast</h3>
+      <div id="forecast-cards" class="forecast-cards"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
